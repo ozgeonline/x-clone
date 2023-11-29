@@ -52,7 +52,7 @@ const NAVIGATION_ITEMS = [
  
 const LeftSidebar = () => {
   return (
-    <section className='absolute left-0 w-[275px] flex flex-col items-stretch h-screen px-2'>
+    <section className='fixed w-[275px] flex flex-col items-stretch h-screen px-2 text-zinc-300'>
           <div className='flex flex-col items-stretch h-full  mt-2'>
             <Link href={"/"} className='pb-3  text-3xl w-[50px] h-[50px] items-center justify-center flex'>
               <FaXTwitter />
@@ -78,8 +78,8 @@ const LeftSidebar = () => {
               ))
             }
             <button
-              className='w-11/12 rounded-full bg-x-blue
-                px-8 py-3 my-4 text-[15px] font-semibold text-center hover:bg-opacity-70
+              className='w-11/12 rounded-full bg-sky-500
+                px-8 py-3 my-4 text-md font-bold text-center hover:bg-opacity-70
                 transition duration-200'
             >
               Post

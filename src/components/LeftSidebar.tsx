@@ -10,6 +10,7 @@ import { BsPeople } from "react-icons/bs";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoPersonOutline } from "react-icons/io5";
 import { HiOutlineDotsCircleHorizontal } from "react-icons/hi";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const NAVIGATION_ITEMS = [
   {
@@ -91,7 +92,10 @@ const LeftSidebar = () => {
               transition duration-200 w-full justify-between'
           >
             <div className='flex items-center space-x-2'>
-              <div className='rounded-full bg-slate-400 w-12 h-12'></div>
+              <Avatar>
+                <AvatarImage src="https://github.com/shadcn.png" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
               <div className='text-left text-sm'>
                 <div className='font-semibold'>ozgeonline</div>
                 <div className=''>@ozgeonline</div>

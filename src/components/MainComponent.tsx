@@ -15,6 +15,8 @@ import { FaRegSmile } from "react-icons/fa";
 import { LuCalendarClock } from "react-icons/lu";
 import { CiLocationOn } from "react-icons/ci";
 import { GiWorld } from "react-icons/gi";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+
 
 
 const MainComponent = () => {
@@ -26,7 +28,12 @@ const MainComponent = () => {
             <div className='hover:bg-white/10 w-1/12 p-3 rounded-full mr-2 transition duration-200 text-gray-300'><IoSettingsOutline/></div>
           </div>
           <div className='flex items-stretch space-x-2 pt-4 pl-4 border-t-[0.5px] border-b-[0.5px] border-gray-800  relative'>
-            <div className='w-10 h-10 bg-slate-400 p-4 rounded-full'></div>
+            
+            <Avatar>
+              <AvatarImage src="https://github.com/shadcn.png" />
+              <AvatarFallback>CN</AvatarFallback>
+            </Avatar>
+
             <div className='flex flex-col w-full h-full'>
               <div className='flex flex-col group'>
                 <input 
@@ -73,7 +80,10 @@ const MainComponent = () => {
               Array.from({length:5}).map((_,i)=>(
                 <div key={i} className=' p-4 border-b-[0.5px] border-gray-800 flex space-x-2 '>
                   <div>
-                    <div className='w-10 h-10 bg-slate-200 rounded-full' />
+                  <Avatar>
+              <AvatarImage src="https://github.com/shadcn.png" />
+              <AvatarFallback>CN</AvatarFallback>
+            </Avatar>
                   </div>
                   <div className='flex flex-col'>
                     <div className='flex items-center space-x-1'>
@@ -84,7 +94,7 @@ const MainComponent = () => {
                       <div className='text-gray-500 pl-[230px]'><BsThreeDots /></div>
                     </div>
                     <div className='text-white text-sm pb-3'>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim rem accusamus quibusdam et nihil fugiat qui aperiam molestias autem quasi, asperiores perspiciatis, quod tempore explicabo nulla fuga voluptas eaque? Dolores eum natus corrupti exercitationem mollitia tenetur accusantium quo numquam assumenda facilis, sint placeat magnam consequuntur illo omnis cupiditate voluptates ex unde repudiandae distinctio accusamus! Inventore molestias repellat minima error aperiam consectetur minus harum esse libero! Facilis dolore, perspiciatis quos quaerat facere incidunt temporibus, reprehenderit fugiat quam numquam sint reiciendis voluptas! Accusantium delectus, voluptatem autem ad libero eaque corporis, non tenetur aliquid quisquam vitae itaque harum esse quibusdam, veniam hic culpa.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim rem accusamus quibusdam et nihil fugiat qui aperiam molestias autem quasi, asperiores perspiciatis, quod tempore explicabo nulla fuga voluptas eaque? Dolores eum natus corrupti exercitationem mollitia tenetur accusantium quo numquam assumenda facilis, sint placeat magnam consequuntur!
                     </div>
                     <div className='bg-slate-400 aspect-square w-full h-72 rounded-xl mb-3'>
 

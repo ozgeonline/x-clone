@@ -1,6 +1,7 @@
 import React from 'react'
 import { CiSearch } from "react-icons/ci";
 import { BsThreeDots } from "react-icons/bs";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const RightComponent = () => {
 
@@ -58,7 +59,11 @@ const RightComponent = () => {
                 Array.from({length:3}).map((_,i)=>(
                   <div className='flex items-center  px-4 py-3 justify-between cursor-pointer hover:bg-white/5 transition duration-200'>
                     <div className='flex space-x-2'>
-                      <div className='rounded-full bg-slate-400 w-10 h-10'></div>
+                    <Avatar>
+                      <AvatarImage src="https://github.com/shadcn.png" />
+                      <AvatarFallback>CN</AvatarFallback>
+                    </Avatar>
+
                       <div className='text-left text-sm'>
                         <div className='font-semibold'>ozgeonline</div>
                         <div className='text-gray-500'>@ozgeonline</div>

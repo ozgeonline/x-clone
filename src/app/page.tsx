@@ -11,7 +11,6 @@ const Home = () => {
         <LeftSidebar/>
         <MainComponent />
         <RightComponent />
-        
       </div>
     </div>
   )

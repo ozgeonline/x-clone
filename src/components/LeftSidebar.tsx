@@ -14,40 +14,49 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const NAVIGATION_ITEMS = [
   {
-   title: 'Home',
-   icon: GoHome
+    id: 1,
+    title: 'Home',
+    icon: GoHome
   },
   {
-   title: 'Explore',
-   icon: CiSearch,
+    id: 2,
+    title: 'Explore',
+    icon: CiSearch,
   },
   {
-   title: 'Notifications',
-   icon: HiOutlineBell
+    id: 3,
+    title: 'Notifications',
+    icon: HiOutlineBell
   },
   {
-   title: 'Messages',
-   icon: FaRegEnvelope
+    id: 4,
+    title: 'Messages',
+    icon: FaRegEnvelope
   },
   {
-   title: 'Lists',
-   icon: RiFileList2Line
+    id: 5,
+    title: 'Lists',
+    icon: RiFileList2Line
   },
   {
-   title: 'Communities',
-   icon: BsPeople
+    id: 6,
+    title: 'Communities',
+    icon: BsPeople
   },
   {
+    id: 7,
    title: 'Premium',
    icon: FaXTwitter
   },
   {
-   title: 'Profile',
-   icon: IoPersonOutline
+    id: 8,
+    title: 'Profile',
+    icon: IoPersonOutline
   },
   {
-   title: 'More',
-   icon: HiOutlineDotsCircleHorizontal
+    id: 9,
+    title: 'More',
+    icon: HiOutlineDotsCircleHorizontal
   }
  ]
  
@@ -69,11 +78,11 @@ const LeftSidebar = () => {
                     w-fit space-x-4 rounded-3xl
                     p-2.5'
                 >
-                  <div className='text-[27px]'>
+                  <div className='text-[27px]' key={item.id}>
                     <item.icon/>
                   </div>
                   <div className='text-[20px]'>
-                    <div>{item.title}</div>
+                    <div key={item.id}>{item.title}</div>
                   </div>
                 </Link>
               ))

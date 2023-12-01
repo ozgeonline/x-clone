@@ -37,8 +37,8 @@ const RightComponent = () => {
             <div>
               {
                 Array.from({length:5}).map((_,i)=> (
-                  <div className='justify-between flex hover:bg-white/5 transition duration-200'>
-                    <div key={i} className=' px-4 py-3  cursor-pointer'>
+                  <div key={i} className='justify-between flex hover:bg-white/5 transition duration-200'>
+                    <div className=' px-4 py-3  cursor-pointer'>
                       <div className='text-gray-500 text-xs'>Trending in Turkey</div>
                       <div className='font-bold text-base'>trending{i+1}</div>
                       <div className='text-xs text-gray-500'>{randomNumber*(i+5)}K Posts</div>
